@@ -1,10 +1,14 @@
 
+import Link from 'next/link'
+
 export default function Home() {
+
+
   return (
     <div className="flex bg-background-basic text-white h-screen">
       <div>
         <img 
-        className="absolute h-screen right-0"
+        className="absolute h-screen w-50 right-0"
         src="login-sidebar.svg"/>
       </div>
       <div className="flex items-center justify-center w-6/12">
@@ -56,9 +60,12 @@ export default function Home() {
 
           </div>
 
+          <Link href='/chat'>
           <div className="flex w-96 h-10 mt-8 text-center bg-[#B6F09C] text-[#0C1132] font-semibold text-lg rounded-lg items-center justify-center">
             Log in
-          </div>
+          </div>          
+          </Link>
+
 
           <img 
           className="mt-8 w-96"
